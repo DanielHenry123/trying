@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+<body>
+    <div class="about-section">
+        <h1>About The Team</h1>
+        <p>Who we are and what we do</p>
+        <p>This three talented individual, has come together to help and keep you 
+          busy by boosting your brain power and for those who love to read, you've come at the right place. Here you will find almost anything 
+          you need just to get started. </p>
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="rotor logo.jpg" alt="rotorstudios" style="width:100%">
+            <div class="container">
+              <h2>RotorStudios</h2>
+              <p class="title">Web designer, Computer programmer and Riddle Master</p>
+              <p>My name is_______ I'm a student, certified graphic designer, web designer
+                  and a programmer. Kindly contact me if you need any of my following services.
+              <p><a href="mailto:momohthescientist@gmail.com">‎‎‎momohthescientist@gmail.com</a></p>
+              <p><button class="button"><a href="tel:+2348132309947">‎‎Contact him +2348132309947</a></button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="marsh.jpg" alt="feliz" style="width:100%">
+            <div class="container">
+              <h2>Musa Oseni</h2>
+              <p class="title">Story Writer and owner of Story realm</p>
+              <p>My name is Oseni Musa. I was born in Lagos, Nigeria. I'm a student and also a writer
+                I have my secondary school certificate, which is the only certificateyou have for now
+                , as an admiting student into the University of Ibadan, with time and determination 
+                i'll get desired certificate.
+              </p>
+              <p>I've always loved writing and i've been inspired to write all the time as people
+                 love my writeups. I'm diligent, intelligent and an enthusiastic person, to sum it up a
+                  great personality is what and who i am.</p>
+              <p><a href="mailto:musaoseni2020@gmail.com"> musaoseni2020@gmail.com</a></p>
+              <p><button class="button"><a href="tel:+2348132309947">Contact him</a></button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="favour.jpg" alt="John" style="width:100%">
+            <div class="container">
+              <h2>Poet and also story writer</h2>
+              <p class="title"></p>
+              <p>Momoh Favour Esther,poem writer and novelist is a young girl who started writing poems and 
+                stories at the age of 10, she hails from warri, Delta State,
+                 Nigeria.  She is very dedicated to her work and has the intentions of making it known to everyone
+                  to help build their knowledge and know more about life</p>
+              <p>She was born in the year 2008, september 17th.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

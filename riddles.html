@@ -1,0 +1,556 @@
+<!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Poem Arena</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection" />
+</head>
+<style>
+	/*
+Company:	Nautica 09 - design by www.studio7designs.com - coding by www.slicendiceit.com/ 
+File:		main.css - This contains all the main styles for the website.
+
+All the styles are separted into the following groups:
+Global Browser Reset - they make sure that all browsers start with the same default settings
+HTML, Body - for the html and body tags
+Layout - any style that defines how the site is laid out (position and size of objects)
+Nav - navigation bar
+Headings - headings like h1, h2, etc
+Text Styles - Styles for text
+Lists - unordered and ordered lists
+Forms - html forms
+Links - links
+Misc - anything that doesn't fit elsewhere
+*/
+
+/* @group Global Browser Reset */
+* {
+
+padding:0;
+
+margin:0;
+
+}
+
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, label, ul, ol, dl, fieldset, address { margin:20px 0; }
+
+li, dd, blockquote { margin-left: 40px; }
+
+fieldset { padding:10px; }
+
+img { border: 0px; }
+/* @end */
+
+/* @group HTML, Body */
+body {
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+/* @end */
+
+/* @group Layout */
+div#outer {
+	width: 702px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+div#header {
+	height: 80px;
+	margin: 10px 0 0 0;
+}
+div#body-top {
+	width: 702px;
+	height: 48px;
+	background: url(../images/body-top.gif) no-repeat;
+	overflow: hidden;
+}
+div#body-middle {
+	width: 702px;
+	padding: 1px 0;
+	background: url(../images/body-middle.gif) repeat-y;
+}
+div#body-bottom {
+	width: 702px;
+	height: 25px;
+	background: url(../images/body-bottom.gif) no-repeat;
+	overflow: hidden;
+}
+div#main-col {
+	width: 404px;
+	float: left;
+	margin-left: 32px;
+	display: inline;
+}
+div#nameplate-top {
+	width: 404px;
+	height: 8px;
+	background: url(../images/nameplate-top.gif) no-repeat;
+	overflow: hidden;
+}
+div#nameplate-middle {
+	background-color: #c6d8e8;
+	padding: 4px 6px;
+}
+div#nameplate-middle img {
+	float: left;
+	display: inline;
+}
+div#nameplate-middle p {
+	float: right;
+	text-align: right;
+	margin: 0;
+	line-height: 27px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 80%;
+	display: inline;
+}
+div#nameplate-bottom {
+	width: 404px;
+	height: 8px;
+	background: url(../images/nameplate-bottom.gif) no-repeat;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+div#content-top {
+	width: 403px;
+	height: 8px;
+	background: url(../images/content-top.gif) no-repeat;
+	overflow: hidden;
+}
+div#content-wrapper {
+	width: 387px;
+	border-right: 8px solid #c5d6e8;
+	border-left: 8px solid #c5d6e8;
+}
+div#content {
+	background-color: #688ba8;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	padding: 10px 0;
+}
+div#content div {
+	padding: 5px 10px;
+	border-bottom: 1px solid #c5d6e8;
+}
+div#content-bottom {
+	width: 403px;
+	height: 8px;
+	background: url(../images/content-bottom.gif) no-repeat;
+	overflow: hidden;
+}
+div#side-col {
+	width: 221px;
+	float: right;
+	margin-right: 34px;
+	display: inline;
+}
+div.side-box-top {
+	width: 221px;
+	height: 7px;
+	background: url(../images/side-box-top.gif) no-repeat;
+	overflow: hidden;
+}
+div.side-box-middle {
+	width: 221px;
+	background-color: #c6d8e8;
+	padding: 1px 0;
+	text-align: center;
+}
+div.side-box-bottom {
+	width: 221px;
+	height: 7px;
+	background: url(../images/side-box-bottom.gif) no-repeat;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+div#footer {
+	text-align: center;
+	
+}
+
+div#logo {
+	width: 300px;
+	height: 75px;
+	margin: 0 0 5px 0;
+	float: left;
+	display: inline;
+}
+div#login-box {
+	float: right;
+	width: 304px;
+	height: 29px;
+	background: url(../images/login-tab.gif) no-repeat;
+	margin: 51px 10px 0 0;
+	overflow: hidden;
+	display: inline;
+}
+/* @end */
+
+/* @group Nav */
+ul#main-nav {
+	background: url(../images/nav-tabs.gif) no-repeat;
+	height: 27px;
+	margin: 14px 0 0 30px;
+	overflow: hidden;
+}
+ul#main-nav li {
+	float: left;
+	list-style-type: none;
+	width: 139px;
+	margin: 0;
+	text-align: center;
+	line-height: 28px;
+}
+ul#main-nav li#right-tab {
+	margin-left: 83px;
+}
+ul#main-nav a:link, ul#main-nav a:visited {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 120%;
+}
+ul#main-nav a:hover {
+	color: #ccc;
+}
+/* @end */
+
+/* @group Headings */
+h1 {
+	font-size: 120%;
+	font-weight: bold;
+	color: #211e1a;
+	margin: 5px 0;
+}
+h2 {
+	font-size: 150%;
+	font-weight: normal;
+	color: rgb(21, 18, 18);
+	margin: 5px 0;
+}
+h3 {
+	font-size: 130%;
+	font-weight: normal;
+	color: #92a8bd;
+	margin: 5px 0;
+}
+
+/* @end */
+
+/* @group Text Styles */
+div#content div p {
+	margin: 10px 0;
+	color: #fff;
+	line-height: 160%;
+}
+div#login-box {
+	color: #fff;
+}
+div#footer {
+	color: #cccccc;
+}
+/* @end */
+
+/* @group Lists */
+	
+/* @end */
+
+/* @group Forms */
+div#login-box form {
+	margin: 5px 0 0 0;
+	text-align: center;
+}
+div#login-box form input {
+	margin: 0;
+	vertical-align: middle;
+}
+div#login-box form input.txt {
+	width: 75px;
+	border: 1px solid #46627c;
+	padding: 2px;
+	height: 12px;
+	line-height: 10px;
+}
+/* @end */
+
+/* @group Links - link visited hover active */
+div#content a:link, div#content a:visited {
+	color: #febb3a;
+	text-decoration: none;
+}
+div#content a:hover {
+	text-decoration: underline;
+}
+
+div#footer a:link, div#footer a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+div#footer a:hover {
+	text-decoration: underline;
+}
+/* @end */
+
+/* @group Misc */
+.clear {
+	clear: both;
+}
+
+/* Clearfix Method from: http://www.positioniseverything.net/easyclearing.html */
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+/* @end */
+</style>
+<body>
+<div id="outer">
+  <div id="header">
+  </div>
+  <div id="body-middle" class="clearfix">
+    <div id="main-col">
+      <div id="nameplate-top"></div>
+      <div id="nameplate-middle" class="clearfix">
+      </div>
+      <div id="nameplate-bottom"></div>
+      <div id="content-top"></div>
+      <div id="content-wrapper">
+        <div id="content">
+          <div>
+            <h2>BRAIN TEASING RIDDLES</h2>
+            <p>Here you will find some brain teasing and hard riddles. Do you think you have what it takes?. Let's find out</p>
+            <p></p>
+          </div>
+          <div>
+            <h1>1</h1>
+            <p>What starts with "e" and ends with "e" but only has one letter in it?</p>
+            </p>
+            <p><a href="#"></a></p>
+          </div>
+          <div>
+            <h1>2.</h1>
+            <p>What two keys can't open any door?
+            </p>
+          </div>
+          <div>
+            <h1>3.</h1>
+            <p>How could a man go outside in the rain without protection, and not have a hair on his head get wet?</p>
+          </div>
+          <div>
+            <h1>4.</h1>
+            <p>A woman was born in 2020, but dies in 1995.How can this be?</p>
+          </div>
+        </div>
+      </div>
+	
+  </div>
+  <div id="body-middle" class="clearfix">
+    <div id="main-col">
+      <div id="nameplate-top"></div>
+      <div id="nameplate-middle" class="clearfix">
+      </div>
+      <div id="nameplate-bottom"></div>
+      <div id="content-top"></div>
+      <div id="content-wrapper">
+        <div id="content">
+          <div>
+            <h2>5.</h2>
+            <p>A family has two parents and six sons. Each of the sons has one sister. How many people are in the family?</p>
+          </div>
+          <div>
+            <h1>6.</h1>
+            <p>I have keys but no locks. I have space but no room. You can enter, but can,t go outside. What am i?</p>
+          </div>
+          <div>
+            <h1>7.</h1>
+            <p>Which word in the dictionary is spelt incorrectly?
+            </p>
+          </div>
+          <div>
+            <h1>8.</h1>
+            <p>What is the question you can ask all day, get different answers for the same, and they would still be correct? </p>
+          </div>
+          <div>
+            <h1>9.</h1>
+            <p>Many has heard of it, but nobody has seen it. It will not speak back unless spoken to. What is it?</p>
+          </div>
+        </div>
+      </div>
+
+	</div>
+	<div id="body-middle" class="clearfix">
+	  <div id="main-col">
+		<div id="nameplate-top"></div>
+		<div id="nameplate-middle" class="clearfix">
+		</div>
+		<div id="nameplate-bottom"></div>
+		<div id="content-top"></div>
+		<div id="content-wrapper">
+		  <div id="content">
+			<div>
+			  <h2>10.</h2>
+			  <p>What is the center of gravity?</p>
+			</div>
+			<div>
+			  <h1>11.</h1>
+			  <p>What planet has the shortest year?</p>
+			</div>
+			<div>
+			  <h1>12.</h1>
+			  <p>What is full of holes but still holds water?
+			  </p>
+			</div>
+			<div>
+			  <h1>13.</h1>
+			  <p>I can rush, i can be hot, i can be cold, i can be hard, i can slip through anything. What am i? </p>
+			</div>
+			<div>
+			  <h1>14.</h1>
+			  <p>Nobody has ever walked this way. What way is that?</p>
+			</div>
+		  </div>
+		</div>
+
+	</div>
+	<div id="body-middle" class="clearfix">
+	  <div id="main-col">
+		<div id="nameplate-top"></div>
+		<div id="nameplate-middle" class="clearfix">
+		</div>
+		<div id="nameplate-bottom"></div>
+		<div id="content-top"></div>
+		<div id="content-wrapper">
+		  <div id="content">
+			<div>
+			  <h2>You've answered now check to see how many you scored.</h2>
+			  <p> </p>
+			</div>
+			<div>
+			  <h1>1.</h1>
+			  <p>An envelope</p>
+			</div>
+			<div>
+			  <h1>2.</h1>
+			  <p>A monkey and a donkey.
+			</div>
+			<div>
+			  <h1>3.</h1>
+			  <p>He is bald </p>
+			</div>
+			<div>
+			  <h1>4.</h1>
+			  <p>The woman was born in 2020 B.C.</p>
+			</div>
+		  </div>
+		</div>
+
+	</div>
+	<div id="body-middle" class="clearfix">
+	  <div id="main-col">
+		<div id="nameplate-top"></div>
+		<div id="nameplate-middle" class="clearfix">
+		</div>
+		<div id="nameplate-bottom"></div>
+		<div id="content-top"></div>
+		<div id="content-wrapper">
+		  <div id="content">
+			<div>
+			  <h2>5.</h2>
+			  <p>Nine</p>
+			</div>
+			<div>
+			  <h1>6.</h1>
+			  <p>A Keyboard</p>
+			</div>
+			<div>
+			  <h1>7.</h1>
+			  <p>Incorrectly
+			  </p>
+			</div>
+			<div>
+			  <h1>8.</h1>
+			  <p>What is the time. </p>
+			</div>
+			<div>
+			  <h1>9.</h1>
+			  <p>An Echo</p>
+			</div>
+		  </div>
+		</div>
+
+	</div>
+	<div id="body-middle" class="clearfix">
+	  <div id="main-col">
+		<div id="nameplate-top"></div>
+		<div id="nameplate-middle" class="clearfix">
+		</div>
+		<div id="nameplate-bottom"></div>
+		<div id="content-top"></div>
+		<div id="content-wrapper">
+		  <div id="content">
+			<div>
+			  <h2>10.</h2>
+			  <p>letter "V"</p>
+			</div>
+			<div>
+			  <h1>11.</h1>
+			  <p>Mecury because it's closer to the sun</p>
+			</div>
+			<div>
+			  <h1>12.</h1>
+			  <p>A sponge
+			  </p>
+			</div>
+			<div>
+			  <h1>13.</h1>
+			  <p> Water</p>
+			</div>
+			<div>
+			  <h1>14.</h1>
+			  <p>The Milky Way</p>
+			</div>
+		  </div>
+		</div>
+
+	</div>
+	<div id="body-middle" class="clearfix">
+	  <div id="main-col">
+		<div id="nameplate-top"></div>
+		<div id="nameplate-middle" class="clearfix">
+		</div>
+		<div id="nameplate-bottom"></div>
+		<div id="content-top"></div>
+		<div id="content-wrapper">
+		  <div id="content">
+			<div>
+			  <h2>How many did you get?. If you got from range 10-14 you are a fast thinker.</h2>
+			  <h2>If you got from range 5-9 you think well but the brain needs time to accimilate.</h2>
+			  <h2>If you got from range 0-4 your brain needs work 😂😂😢</h2>
+			  <p></p>
+			</div>
+	
+  </div>
+      <div id="content-bottom"></div>
+    </div>
+  </div>
+  <div id="body-bottom"></div>
+  <div id="footer">
+    <p><a href="#"></a> | <a href="">design by rotorstudios</a> | <a href=""></a></p>
+  </div>
+</div>
+</body>
+</html>
